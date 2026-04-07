@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import html2canvas from "html2canvas";
+import logo from "./logo.png";
 
 const moods = {
   happy: ["smile", "joy", "happiness", "cheer"],
@@ -85,6 +86,11 @@ function App() {
         color: darkMode ? "white" : "black",
       }}
     >
+      <img
+  src={logo}
+  alt="App Logo"
+  style={{ width: "120px", marginBottom: "10px" }}
+/>
       <h1>🌈 Situation Quote App</h1>
 
       <button onClick={() => setDarkMode(!darkMode)}>
